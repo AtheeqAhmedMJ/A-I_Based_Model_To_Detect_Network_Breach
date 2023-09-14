@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >CyberKnights</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Title Section -->
+    <section class="title-section">
+        <div class="container">
+            <h1 class="title" size="25%">CyberKnights</h1>
+        </div>
+    </section>
+
+    <header class="header">
+        <div class="container">
+            <button class="mobile-menu-button" onclick="toggleNavbar()">&#9776;</button>
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="https://colab.research.google.com/drive/17mkRZBz4G5FTDlttLE4gCQIeKVR5MBk2">Source Code</a></li>
+                    <li><a href="#router">Router Detection</a></li>
+                    <li><a href="#file">File Compromises</a></li>
+                    <li><a href="#antivirus">Antivirus Checks</a></li>
+                    <li><a href="#memory">Memory Scanning</a></li>
+                    <li><a href="#biometric">Biometric Authentication</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        function toggleNavbar() {
+            var navbar = document.getElementById('navbar');
+            if (navbar.style.display === 'block') {
+                navbar.style.display = 'none';
+            } else {
+                navbar.style.display = 'block';
+            }
+        }
+    </script>
+
+    <!-- Speedometer Section -->
+    <section class="section speedometer-section">
+        <div class="container">
+            <!-- Speedometer Container -->
+            <div class="speedometer">
+                <div class="needle"></div>
+                <div id="stopwatch-container">
+                </div>
+            </div>
+            
+            <!-- Welcome Content -->
+            <h2>Welcome to CyberKnights</h2>
+            <p>We use AI and machine learning to protect your digital world from threats.</p>
+        </div>
+    </section>
+
+    <!-- Router Detection Section -->
+    <section id="router" class="section" style="position: absolute; bottom: -70%; mid: 100%>
+        <div class="container">
+            <h2>Router Detection</h2>
+            <p>Our AI can identify compromised routers and network systems in real-time.</p>
+        </div>
+    </section>
+
+    <!-- File Compromises Section -->
+    <section id="file" class="section" style="position: absolute; bottom: -18%; left: 5%;>
+
+        <div class="container">
+            <h2>File Compromises</h2>
+            <p>We detect unauthorized access to your files and monitor for file compromises.</p>
+        </div>
+    </section>
+
+    <!-- Antivirus Checks Section -->
+    <section id="antivirus" class="section" style="position: absolute; bottom: -45%; left: 5%;>
+        <div class="container">
+            <h2>Antivirus Checks</h2>
+            <p>We ensure your antivirus is secure and not compromised by malware.</p>
+        </div>
+    </section>
+
+    <!-- Memory Scanning Section -->
+    <section id="memory" class="section" style="position: absolute; bottom: -18%; right: 5%;>
+        <div class="container">
+            <h2>Memory Scanning</h2>
+            <p>Our memory scanning technology detects any unauthorized memory access or compromises.</p>
+        </div>
+    </section>
+
+    <!-- Biometric Authentication Section -->
+    <section id="biometric" class="section" style="position: absolute; bottom: -45%; right: 5%;
+        <div class="container">
+            <h2>Biometric Authentication</h2>
+            <p>We provide world-class biometric authentication systems to protect your data.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" style="position: absolute; bottom: -85%; right: 5% >
+        <div class="container" > 
+            <p>&copy; 2023 CyberKnights</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Speedometer and Responsive Menu -->
+    <script src="script.js"></script>
+    <!-- JavaScript for Stopwatch -->
+    <script src="stopwatch.js"></script>
+</body>
+</html>
+<!... Coded By Syed Arshiya Anjum and Atheeq Ahmed In Internal Smart India Hackathon ...!>
+
+
+

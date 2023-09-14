@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Futuristic Website</title>
+    <style>
+        /* CSS styles for a futuristic design */
+        body {
+            font-family: 'Bahnschrift SemiBold Condensed', sans-serif;
+            text-align: center;
+            background-image: url('https://wallpaperaccess.com/full/316894.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #e4e7f1; /* Neon green text color */
+            font-size: 36px; /* Larger font size for impact */
+            text-transform: uppercase; /* Uppercase text */
+            letter-spacing: 5px; /* Increased letter spacing for a modern look */
+            margin-top: 50px; /* Add some space at the top */
+        }
+        #content {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>CyberKinghts</h1>
+
+    <script>
+        // JavaScript code for responsiveness and redirection
+        // You can add your responsive code here
+        window.addEventListener('mousemove', function(event) {
+            // Get the cursor's X and Y coordinates
+            const mouseX = event.clientX;
+            const mouseY = event.clientY;
+
+            // Get the dimensions of the viewport
+            const viewportWidth = window.innerWidth;
+            const viewportHeight = window.innerHeight;
+
+            // Define the middle portion (e.g., 40% width and 40% height)
+            const middleWidth = viewportWidth * 0.4;
+            const middleHeight = viewportHeight * 0.4;
+
+            // Check if the cursor is within the middle portion
+            if (mouseX >= (viewportWidth - middleWidth) / 2 && mouseX <= (viewportWidth + middleWidth) / 2 &&
+                mouseY >= (viewportHeight - middleHeight) / 2 && mouseY <= (viewportHeight + middleHeight) / 2) {
+                // Redirect to another website when the cursor is in the middle portion
+                window.location.href = 'script.html';
+            }
+        });
+    </script>
+</body>
+</html>
+<!... Coded By Syed Arshiya Anjum and Atheeq Ahmed In Internal Smart India Hackathon ...!>

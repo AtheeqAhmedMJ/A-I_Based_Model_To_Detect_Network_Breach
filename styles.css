@@ -1,0 +1,220 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    background: #f5f5f5; /* Fallback for older browsers */
+    background: -webkit-linear-gradient(to right, #355c7d, #6c5b7b, #c06c84); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0;
+}
+
+.mobile-menu-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mobile-menu-button:hover {
+    opacity: 0.8;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #FF5733;
+}
+
+/* Speedometer Styles */
+.speedometer-section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.speedometer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: no-repeat center center;
+    background-size: cover; /* Adjust this property based on your image and design preferences */
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.needle {
+    position: absolute top;
+    width: 4px;
+    height: 30%;
+    top: calc(80% - 2px); /* Adjust the top position to center the needle */
+    left: 80%;
+    transform-origin: 50% 100%;
+    transform: translateX(-50%) rotate(45deg);
+    background: #FF5733;
+    transition: transform 0.3s ease;
+}
+
+#stopwatch-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#timer {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #333;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #FF5733;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF744D;
+}
+
+/* Section Styles */
+.section {
+    margin: 20px 0;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.section p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .speedometer-section {
+        padding: 20px;
+    }
+
+    .speedometer {
+        width: 150px;
+        height: 150px;
+    }
+
+    .needle {
+        width: 2px;
+        height: 20%;
+    }
+
+    #timer {
+        font-size: 2rem;
+    }
+
+    #buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        font-size: 1.2rem;
+    }
+}
+
+<!... Coded By Syed Arshiya Anjum and Atheeq Ahmed In Internal Smart India Hackathon ...!>
